@@ -1,0 +1,34 @@
+{
+    "name": "laveroadmin/helpers",
+    "description": "Helpers extension for LaveroAdmin",
+    "type": "library",
+    "keywords": [
+        "lavero-admin",
+        "helpers"
+    ],
+    "homepage": "https://bespredel.name",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksandr Kireev",
+            "email": "hello@bespredel.name",
+            "homepage": "https://bespredel.name"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "laveroadmin/laveroadmin": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaveroAdmin\\Admin\\Helpers\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaveroAdmin\\Admin\\Helpers\\HelpersServiceProvider"
+            ]
+        }
+    }
+}
